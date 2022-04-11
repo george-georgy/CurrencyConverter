@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         binding.btnConvert.setOnClickListener {
             viewModel.convert(
                 binding.etFrom.text.toString(),
-                binding.spFromCurrency.selectedItem.toString(),
                 binding.spToCurrency.selectedItem.toString(),
             )
         }
